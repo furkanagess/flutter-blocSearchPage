@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           elevation: 0,
           backgroundColor: Colors.transparent,
           systemOverlayStyle: SystemUiOverlayStyle.dark,
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Travel App Bar'),
         ),
-        body: TravelTabView(),
+        body: const TravelTabView(),
       ),
     );
   }
